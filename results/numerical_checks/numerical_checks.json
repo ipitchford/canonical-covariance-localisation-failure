@@ -1,0 +1,952 @@
+{
+  "script": "numerical_checks.py",
+  "script_sha256": "fa2cd39c46095af1cfb4f87691a6a75f815c24aa481ede34380e074388b8d0ea",
+  "python": "3.11.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "platform": "macOS-27.2-arm64-arm-64bit",
+  "optimize_flag": 0,
+  "model": {
+    "P": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "H": [
+      [
+        1,
+        0
+      ]
+    ],
+    "R": 1,
+    "W": [
+      [
+        2.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0
+      ]
+    ],
+    "Bayes_risk": 2
+  },
+  "quadrature_scope": "floating-point deterministic checks, not rigorous interval enclosures",
+  "theta_star_degrees": -15.858737205730504,
+  "rational_rotation": {
+    "cos": "63/65",
+    "sin": "-16/65",
+    "theta_degrees": -14.250032697803595
+  },
+  "identities": {
+    "leading_angle_formula_max_error": 1.1102230246251565e-16
+  },
+  "risk_rows": [
+    {
+      "N": 2,
+      "canonical_risk": 3.3772818303248062,
+      "rational_rotation_risk": 3.250331448858571,
+      "MSE_over_KF_canonical": 1.6886409151624031,
+      "MSE_over_KF_rotated": 1.6251657244292854,
+      "rational_rotation_total_risk_reduction_percent": 3.7589513651582367,
+      "rational_rotation_excess_risk_reduction_percent": 9.217458523815457,
+      "asymptotic_angle_risk": 3.251385114937487,
+      "numerical_minimiser_degrees": -14.137552849120345,
+      "numerical_minimum_risk": 3.250326575334265,
+      "analytic_derivative_numeric_integral": 1.0988841182308122,
+      "central_difference_derivative": 1.0988841173231734
+    },
+    {
+      "N": 3,
+      "canonical_risk": 2.831656193198984,
+      "rational_rotation_risk": 2.746111403298429,
+      "MSE_over_KF_canonical": 1.415828096599492,
+      "MSE_over_KF_rotated": 1.3730557016492144,
+      "rational_rotation_total_risk_reduction_percent": 3.021016114386169,
+      "rational_rotation_excess_risk_reduction_percent": 10.286076217565975,
+      "asymptotic_angle_risk": 2.745283653853068,
+      "numerical_minimiser_degrees": -15.972072632402147,
+      "numerical_minimum_risk": 2.7452801976363137,
+      "analytic_derivative_numeric_integral": 0.59908081151584,
+      "central_difference_derivative": 0.599080811114483
+    },
+    {
+      "N": 5,
+      "canonical_risk": 2.459408841909714,
+      "rational_rotation_risk": 2.413462614223562,
+      "MSE_over_KF_canonical": 1.229704420954857,
+      "MSE_over_KF_rotated": 1.206731307111781,
+      "rational_rotation_total_risk_reduction_percent": 1.8681817721072957,
+      "rational_rotation_excess_risk_reduction_percent": 10.001163124148588,
+      "asymptotic_angle_risk": 2.412684095191584,
+      "numerical_minimiser_degrees": -16.51120466554019,
+      "numerical_minimum_risk": 2.412615043613857,
+      "analytic_derivative_numeric_integral": 0.29694347084058376,
+      "central_difference_derivative": 0.2969434707011942
+    },
+    {
+      "N": 10,
+      "canonical_risk": 2.214933889407475,
+      "rational_rotation_risk": 2.1953191967212695,
+      "MSE_over_KF_canonical": 1.1074669447037375,
+      "MSE_over_KF_rotated": 1.0976595983606348,
+      "rational_rotation_total_risk_reduction_percent": 0.88556560446383,
+      "rational_rotation_excess_risk_reduction_percent": 9.125919016437507,
+      "asymptotic_angle_risk": 2.1949721566168967,
+      "numerical_minimiser_degrees": -16.44601385254015,
+      "numerical_minimum_risk": 2.1949456998472088,
+      "analytic_derivative_numeric_integral": 0.12462806546073754,
+      "central_difference_derivative": 0.12462806542323789
+    },
+    {
+      "N": 20,
+      "canonical_risk": 2.103744575816851,
+      "rational_rotation_risk": 2.094967646020938,
+      "MSE_over_KF_canonical": 1.0518722879084255,
+      "MSE_over_KF_rotated": 1.047483823010469,
+      "rational_rotation_total_risk_reduction_percent": 0.4172051063996151,
+      "rational_rotation_excess_risk_reduction_percent": 8.460133676200558,
+      "asymptotic_angle_risk": 2.0948290792165647,
+      "numerical_minimiser_degrees": -16.230473909638444,
+      "numerical_minimum_risk": 2.0948240401952356,
+      "analytic_derivative_numeric_integral": 0.056208617669456465,
+      "central_difference_derivative": 0.05620861764921158
+    },
+    {
+      "N": 50,
+      "canonical_risk": 2.040599837415816,
+      "rational_rotation_risk": 2.037357900361468,
+      "MSE_over_KF_canonical": 1.020299918707908,
+      "MSE_over_KF_rotated": 1.018678950180734,
+      "rational_rotation_total_risk_reduction_percent": 0.15887176872725237,
+      "rational_rotation_excess_risk_reduction_percent": 7.985098612944233,
+      "asymptotic_angle_risk": 2.037313889554487,
+      "numerical_minimiser_degrees": -16.028297772824917,
+      "numerical_minimum_risk": 2.037313486096963,
+      "analytic_derivative_numeric_integral": 0.020997694200550452,
+      "central_difference_derivative": 0.02099769420560449
+    },
+    {
+      "N": 100,
+      "canonical_risk": 2.0201499893036416,
+      "rational_rotation_risk": 2.018575411597256,
+      "MSE_over_KF_canonical": 1.0100749946518208,
+      "MSE_over_KF_rotated": 1.009287705798628,
+      "rational_rotation_total_risk_reduction_percent": 0.07794360392657525,
+      "rational_rotation_excess_risk_reduction_percent": 7.8142855693775175,
+      "asymptotic_angle_risk": 2.018555547715999,
+      "numerical_minimiser_degrees": -15.947183640432248,
+      "numerical_minimum_risk": 2.0185554936112,
+      "analytic_derivative_numeric_integral": 0.010249729838024704,
+      "central_difference_derivative": 0.010249729842648492
+    },
+    {
+      "N": 200,
+      "canonical_risk": 2.0100374993143166,
+      "rational_rotation_risk": 2.0092619432457317,
+      "MSE_over_KF_canonical": 1.0050187496571583,
+      "MSE_over_KF_rotated": 1.0046309716228659,
+      "rational_rotation_total_risk_reduction_percent": 0.03858415919352207,
+      "rational_rotation_excess_risk_reduction_percent": 7.726586516212649,
+      "asymptotic_angle_risk": 2.009252568072802,
+      "numerical_minimiser_degrees": -15.903895970989081,
+      "numerical_minimum_risk": 2.009252561073443,
+      "analytic_derivative_numeric_integral": 0.005062467456165367,
+      "central_difference_derivative": 0.005062467445249297
+    }
+  ],
+  "independent_quadrature_comparisons": [
+    {
+      "N": 2,
+      "theta": 0.0,
+      "absolute_difference": 4.04121180963557e-14
+    },
+    {
+      "N": 2,
+      "theta": -0.24870998909352288,
+      "absolute_difference": 3.730349362740526e-14
+    },
+    {
+      "N": 2,
+      "theta": -0.27678717944852266,
+      "absolute_difference": 3.9968028886505635e-14
+    },
+    {
+      "N": 2,
+      "theta": 0.2,
+      "absolute_difference": 1.5987211554602254e-14
+    },
+    {
+      "N": 3,
+      "theta": 0.0,
+      "absolute_difference": 2.6645352591003757e-15
+    },
+    {
+      "N": 3,
+      "theta": -0.24870998909352288,
+      "absolute_difference": 1.7763568394002505e-15
+    },
+    {
+      "N": 3,
+      "theta": -0.27678717944852266,
+      "absolute_difference": 8.881784197001252e-16
+    },
+    {
+      "N": 3,
+      "theta": 0.2,
+      "absolute_difference": 3.1086244689504383e-15
+    },
+    {
+      "N": 5,
+      "theta": 0.0,
+      "absolute_difference": 0.0
+    },
+    {
+      "N": 5,
+      "theta": -0.24870998909352288,
+      "absolute_difference": 2.220446049250313e-15
+    },
+    {
+      "N": 5,
+      "theta": -0.27678717944852266,
+      "absolute_difference": 8.881784197001252e-16
+    },
+    {
+      "N": 5,
+      "theta": 0.2,
+      "absolute_difference": 8.881784197001252e-16
+    },
+    {
+      "N": 10,
+      "theta": 0.0,
+      "absolute_difference": 8.881784197001252e-16
+    },
+    {
+      "N": 10,
+      "theta": -0.24870998909352288,
+      "absolute_difference": 4.440892098500626e-16
+    },
+    {
+      "N": 10,
+      "theta": -0.27678717944852266,
+      "absolute_difference": 4.440892098500626e-16
+    },
+    {
+      "N": 10,
+      "theta": 0.2,
+      "absolute_difference": 0.0
+    },
+    {
+      "N": 20,
+      "theta": 0.0,
+      "absolute_difference": 0.0
+    },
+    {
+      "N": 20,
+      "theta": -0.24870998909352288,
+      "absolute_difference": 4.440892098500626e-16
+    },
+    {
+      "N": 20,
+      "theta": -0.27678717944852266,
+      "absolute_difference": 8.881784197001252e-16
+    },
+    {
+      "N": 20,
+      "theta": 0.2,
+      "absolute_difference": 0.0
+    },
+    {
+      "N": 50,
+      "theta": 0.0,
+      "absolute_difference": 4.440892098500626e-16
+    },
+    {
+      "N": 50,
+      "theta": -0.24870998909352288,
+      "absolute_difference": 0.0
+    },
+    {
+      "N": 50,
+      "theta": -0.27678717944852266,
+      "absolute_difference": 4.440892098500626e-16
+    },
+    {
+      "N": 50,
+      "theta": 0.2,
+      "absolute_difference": 0.0
+    },
+    {
+      "N": 100,
+      "theta": 0.0,
+      "absolute_difference": 8.881784197001252e-16
+    },
+    {
+      "N": 100,
+      "theta": -0.24870998909352288,
+      "absolute_difference": 4.440892098500626e-16
+    },
+    {
+      "N": 100,
+      "theta": -0.27678717944852266,
+      "absolute_difference": 8.881784197001252e-16
+    },
+    {
+      "N": 100,
+      "theta": 0.2,
+      "absolute_difference": 0.0
+    },
+    {
+      "N": 200,
+      "theta": 0.0,
+      "absolute_difference": 8.881784197001252e-16
+    },
+    {
+      "N": 200,
+      "theta": -0.24870998909352288,
+      "absolute_difference": 8.881784197001252e-16
+    },
+    {
+      "N": 200,
+      "theta": -0.27678717944852266,
+      "absolute_difference": 4.440892098500626e-16
+    },
+    {
+      "N": 200,
+      "theta": 0.2,
+      "absolute_difference": 0.0
+    }
+  ],
+  "independent_quadrature_max_difference": 4.04121180963557e-14,
+  "positive_derivative_checks": [
+    {
+      "N": 2,
+      "beta": 0.01,
+      "derivative": 0.03678266288377571
+    },
+    {
+      "N": 2,
+      "beta": 0.1,
+      "derivative": 0.23327980349895197
+    },
+    {
+      "N": 2,
+      "beta": 1.0,
+      "derivative": 1.0988841182308122
+    },
+    {
+      "N": 2,
+      "beta": 10.0,
+      "derivative": 5.230352762177722
+    },
+    {
+      "N": 2,
+      "beta": 100.0,
+      "derivative": 18.46394349861156
+    },
+    {
+      "N": 3,
+      "beta": 0.01,
+      "derivative": 0.019004006830711805
+    },
+    {
+      "N": 3,
+      "beta": 0.1,
+      "derivative": 0.13713155035637262
+    },
+    {
+      "N": 3,
+      "beta": 1.0,
+      "derivative": 0.59908081151584
+    },
+    {
+      "N": 3,
+      "beta": 10.0,
+      "derivative": 1.6972971615829857
+    },
+    {
+      "N": 3,
+      "beta": 100.0,
+      "derivative": 2.4308996272059797
+    },
+    {
+      "N": 10,
+      "beta": 0.01,
+      "derivative": 0.004328312346031453
+    },
+    {
+      "N": 10,
+      "beta": 0.1,
+      "derivative": 0.03516376222762137
+    },
+    {
+      "N": 10,
+      "beta": 1.0,
+      "derivative": 0.12462806546073754
+    },
+    {
+      "N": 10,
+      "beta": 10.0,
+      "derivative": 0.09047255828783353
+    },
+    {
+      "N": 10,
+      "beta": 100.0,
+      "derivative": 0.015494191467705165
+    },
+    {
+      "N": 100,
+      "beta": 0.01,
+      "derivative": 0.00039584803431257575
+    },
+    {
+      "N": 100,
+      "beta": 0.1,
+      "derivative": 0.003325835075481216
+    },
+    {
+      "N": 100,
+      "beta": 1.0,
+      "derivative": 0.010249729838024704
+    },
+    {
+      "N": 100,
+      "beta": 10.0,
+      "derivative": 0.003667444696596029
+    },
+    {
+      "N": 100,
+      "beta": 100.0,
+      "derivative": 0.0004453474629871675
+    }
+  ],
+  "large_N_convergence": [
+    {
+      "N": 100,
+      "theta": 0,
+      "scaled_excess": 2.0149989303641647,
+      "limit": 2.0
+    },
+    {
+      "N": 100,
+      "theta": -0.27678717944852266,
+      "scaled_excess": 1.8555547715998877,
+      "limit": 1.8454915028125263
+    },
+    {
+      "N": 1000,
+      "theta": 0,
+      "scaled_excess": 2.0014999988804405,
+      "limit": 2.0
+    },
+    {
+      "N": 1000,
+      "theta": -0.27678717944852266,
+      "scaled_excess": 1.8464944034084496,
+      "limit": 1.8454915028125263
+    },
+    {
+      "N": 10000,
+      "theta": 0,
+      "scaled_excess": 2.000149999998868,
+      "limit": 2.0
+    },
+    {
+      "N": 10000,
+      "theta": -0.27678717944852266,
+      "scaled_excess": 1.8455917586468473,
+      "limit": 1.8454915028125263
+    },
+    {
+      "N": 100000,
+      "theta": 0,
+      "scaled_excess": 2.0000150000143435,
+      "limit": 2.0
+    },
+    {
+      "N": 100000,
+      "theta": -0.27678717944852266,
+      "scaled_excess": 1.8455015280416376,
+      "limit": 1.8454915028125263
+    }
+  ],
+  "negative_controls": {
+    "wrong_sign_rotation_N3": {
+      "canonical": 2.831656193198984,
+      "wrong_sign": 2.958434490651266
+    },
+    "wrong_sign_rotation_N10": {
+      "canonical": 2.214933889407475,
+      "wrong_sign": 2.2450521384983535
+    },
+    "W_identity_first_variation_N3": 0.0,
+    "W_identity_first_variation_N10": 0.0
+  },
+  "checks": [
+    {
+      "name": "N=2: analytic derivative matches central difference (3e-8)",
+      "ok": true,
+      "analytic": 1.0988841182308122,
+      "fd": 1.0988841173231734
+    },
+    {
+      "name": "N=2: rational rotation beats canonical",
+      "ok": true,
+      "canonical": 3.3772818303248062,
+      "rotated": 3.250331448858571
+    },
+    {
+      "name": "N=2, theta=0.000000: Laplace vs Laguerre (2e-8)",
+      "ok": true,
+      "laplace": 3.3772818303248062,
+      "laguerre": 3.377281830324766
+    },
+    {
+      "name": "N=2, theta=-0.248710: Laplace vs Laguerre (2e-8)",
+      "ok": true,
+      "laplace": 3.250331448858571,
+      "laguerre": 3.250331448858608
+    },
+    {
+      "name": "N=2, theta=-0.276787: Laplace vs Laguerre (2e-8)",
+      "ok": true,
+      "laplace": 3.251385114937487,
+      "laguerre": 3.251385114937527
+    },
+    {
+      "name": "N=2, theta=0.200000: Laplace vs Laguerre (2e-8)",
+      "ok": true,
+      "laplace": 3.5773666519557406,
+      "laguerre": 3.5773666519557565
+    },
+    {
+      "name": "N=3: analytic derivative matches central difference (3e-8)",
+      "ok": true,
+      "analytic": 0.59908081151584,
+      "fd": 0.599080811114483
+    },
+    {
+      "name": "N=3: rational rotation beats canonical",
+      "ok": true,
+      "canonical": 2.831656193198984,
+      "rotated": 2.746111403298429
+    },
+    {
+      "name": "N=3, theta=0.000000: Laplace vs Laguerre (2e-8)",
+      "ok": true,
+      "laplace": 2.831656193198984,
+      "laguerre": 2.8316561931989868
+    },
+    {
+      "name": "N=3, theta=-0.248710: Laplace vs Laguerre (2e-8)",
+      "ok": true,
+      "laplace": 2.746111403298429,
+      "laguerre": 2.7461114032984306
+    },
+    {
+      "name": "N=3, theta=-0.276787: Laplace vs Laguerre (2e-8)",
+      "ok": true,
+      "laplace": 2.745283653853068,
+      "laguerre": 2.7452836538530687
+    },
+    {
+      "name": "N=3, theta=0.200000: Laplace vs Laguerre (2e-8)",
+      "ok": true,
+      "laplace": 2.9428466902642962,
+      "laguerre": 2.9428466902642993
+    },
+    {
+      "name": "N=5: analytic derivative matches central difference (3e-8)",
+      "ok": true,
+      "analytic": 0.29694347084058376,
+      "fd": 0.2969434707011942
+    },
+    {
+      "name": "N=5: rational rotation beats canonical",
+      "ok": true,
+      "canonical": 2.459408841909714,
+      "rotated": 2.413462614223562
+    },
+    {
+      "name": "N=5, theta=0.000000: Laplace vs Laguerre (2e-8)",
+      "ok": true,
+      "laplace": 2.459408841909714,
+      "laguerre": 2.459408841909714
+    },
+    {
+      "name": "N=5, theta=-0.248710: Laplace vs Laguerre (2e-8)",
+      "ok": true,
+      "laplace": 2.413462614223562,
+      "laguerre": 2.413462614223564
+    },
+    {
+      "name": "N=5, theta=-0.276787: Laplace vs Laguerre (2e-8)",
+      "ok": true,
+      "laplace": 2.412684095191584,
+      "laguerre": 2.412684095191585
+    },
+    {
+      "name": "N=5, theta=0.200000: Laplace vs Laguerre (2e-8)",
+      "ok": true,
+      "laplace": 2.516643519781991,
+      "laguerre": 2.516643519781992
+    },
+    {
+      "name": "N=10: analytic derivative matches central difference (3e-8)",
+      "ok": true,
+      "analytic": 0.12462806546073754,
+      "fd": 0.12462806542323789
+    },
+    {
+      "name": "N=10: rational rotation beats canonical",
+      "ok": true,
+      "canonical": 2.214933889407475,
+      "rotated": 2.1953191967212695
+    },
+    {
+      "name": "N=10, theta=0.000000: Laplace vs Laguerre (2e-8)",
+      "ok": true,
+      "laplace": 2.214933889407475,
+      "laguerre": 2.214933889407474
+    },
+    {
+      "name": "N=10, theta=-0.248710: Laplace vs Laguerre (2e-8)",
+      "ok": true,
+      "laplace": 2.1953191967212695,
+      "laguerre": 2.195319196721269
+    },
+    {
+      "name": "N=10, theta=-0.276787: Laplace vs Laguerre (2e-8)",
+      "ok": true,
+      "laplace": 2.1949721566168967,
+      "laguerre": 2.194972156616897
+    },
+    {
+      "name": "N=10, theta=0.200000: Laplace vs Laguerre (2e-8)",
+      "ok": true,
+      "laplace": 2.240130224943681,
+      "laguerre": 2.240130224943681
+    },
+    {
+      "name": "N=20: analytic derivative matches central difference (3e-8)",
+      "ok": true,
+      "analytic": 0.056208617669456465,
+      "fd": 0.05620861764921158
+    },
+    {
+      "name": "N=20: rational rotation beats canonical",
+      "ok": true,
+      "canonical": 2.103744575816851,
+      "rotated": 2.094967646020938
+    },
+    {
+      "name": "N=20, theta=0.000000: Laplace vs Laguerre (2e-8)",
+      "ok": true,
+      "laplace": 2.103744575816851,
+      "laguerre": 2.103744575816851
+    },
+    {
+      "name": "N=20, theta=-0.248710: Laplace vs Laguerre (2e-8)",
+      "ok": true,
+      "laplace": 2.094967646020938,
+      "laguerre": 2.0949676460209385
+    },
+    {
+      "name": "N=20, theta=-0.276787: Laplace vs Laguerre (2e-8)",
+      "ok": true,
+      "laplace": 2.0948290792165647,
+      "laguerre": 2.0948290792165656
+    },
+    {
+      "name": "N=20, theta=0.200000: Laplace vs Laguerre (2e-8)",
+      "ok": true,
+      "laplace": 2.1154833013793954,
+      "laguerre": 2.1154833013793954
+    },
+    {
+      "name": "N=50: analytic derivative matches central difference (3e-8)",
+      "ok": true,
+      "analytic": 0.020997694200550452,
+      "fd": 0.02099769420560449
+    },
+    {
+      "name": "N=50: rational rotation beats canonical",
+      "ok": true,
+      "canonical": 2.040599837415816,
+      "rotated": 2.037357900361468
+    },
+    {
+      "name": "N=50, theta=0.000000: Laplace vs Laguerre (2e-8)",
+      "ok": true,
+      "laplace": 2.040599837415816,
+      "laguerre": 2.0405998374158165
+    },
+    {
+      "name": "N=50, theta=-0.248710: Laplace vs Laguerre (2e-8)",
+      "ok": true,
+      "laplace": 2.037357900361468,
+      "laguerre": 2.037357900361468
+    },
+    {
+      "name": "N=50, theta=-0.276787: Laplace vs Laguerre (2e-8)",
+      "ok": true,
+      "laplace": 2.037313889554487,
+      "laguerre": 2.0373138895544876
+    },
+    {
+      "name": "N=50, theta=0.200000: Laplace vs Laguerre (2e-8)",
+      "ok": true,
+      "laplace": 2.0450861249038805,
+      "laguerre": 2.0450861249038805
+    },
+    {
+      "name": "N=100: analytic derivative matches central difference (3e-8)",
+      "ok": true,
+      "analytic": 0.010249729838024704,
+      "fd": 0.010249729842648492
+    },
+    {
+      "name": "N=100: rational rotation beats canonical",
+      "ok": true,
+      "canonical": 2.0201499893036416,
+      "rotated": 2.018575411597256
+    },
+    {
+      "name": "N=100, theta=0.000000: Laplace vs Laguerre (2e-8)",
+      "ok": true,
+      "laplace": 2.0201499893036416,
+      "laguerre": 2.0201499893036408
+    },
+    {
+      "name": "N=100, theta=-0.248710: Laplace vs Laguerre (2e-8)",
+      "ok": true,
+      "laplace": 2.018575411597256,
+      "laguerre": 2.0185754115972556
+    },
+    {
+      "name": "N=100, theta=-0.276787: Laplace vs Laguerre (2e-8)",
+      "ok": true,
+      "laplace": 2.018555547715999,
+      "laguerre": 2.018555547715998
+    },
+    {
+      "name": "N=100, theta=0.200000: Laplace vs Laguerre (2e-8)",
+      "ok": true,
+      "laplace": 2.022357916013501,
+      "laguerre": 2.022357916013501
+    },
+    {
+      "name": "N=200: analytic derivative matches central difference (3e-8)",
+      "ok": true,
+      "analytic": 0.005062467456165367,
+      "fd": 0.005062467445249297
+    },
+    {
+      "name": "N=200: rational rotation beats canonical",
+      "ok": true,
+      "canonical": 2.0100374993143166,
+      "rotated": 2.0092619432457317
+    },
+    {
+      "name": "N=200, theta=0.000000: Laplace vs Laguerre (2e-8)",
+      "ok": true,
+      "laplace": 2.0100374993143166,
+      "laguerre": 2.0100374993143157
+    },
+    {
+      "name": "N=200, theta=-0.248710: Laplace vs Laguerre (2e-8)",
+      "ok": true,
+      "laplace": 2.0092619432457317,
+      "laguerre": 2.009261943245731
+    },
+    {
+      "name": "N=200, theta=-0.276787: Laplace vs Laguerre (2e-8)",
+      "ok": true,
+      "laplace": 2.009252568072802,
+      "laguerre": 2.0092525680728017
+    },
+    {
+      "name": "N=200, theta=0.200000: Laplace vs Laguerre (2e-8)",
+      "ok": true,
+      "laplace": 2.011132620870475,
+      "laguerre": 2.011132620870475
+    },
+    {
+      "name": "N=2, beta=0.01: derivative positive",
+      "ok": true,
+      "value": 0.03678266288377571
+    },
+    {
+      "name": "N=2, beta=0.1: derivative positive",
+      "ok": true,
+      "value": 0.23327980349895197
+    },
+    {
+      "name": "N=2, beta=1.0: derivative positive",
+      "ok": true,
+      "value": 1.0988841182308122
+    },
+    {
+      "name": "N=2, beta=10.0: derivative positive",
+      "ok": true,
+      "value": 5.230352762177722
+    },
+    {
+      "name": "N=2, beta=100.0: derivative positive",
+      "ok": true,
+      "value": 18.46394349861156
+    },
+    {
+      "name": "N=3, beta=0.01: derivative positive",
+      "ok": true,
+      "value": 0.019004006830711805
+    },
+    {
+      "name": "N=3, beta=0.1: derivative positive",
+      "ok": true,
+      "value": 0.13713155035637262
+    },
+    {
+      "name": "N=3, beta=1.0: derivative positive",
+      "ok": true,
+      "value": 0.59908081151584
+    },
+    {
+      "name": "N=3, beta=10.0: derivative positive",
+      "ok": true,
+      "value": 1.6972971615829857
+    },
+    {
+      "name": "N=3, beta=100.0: derivative positive",
+      "ok": true,
+      "value": 2.4308996272059797
+    },
+    {
+      "name": "N=10, beta=0.01: derivative positive",
+      "ok": true,
+      "value": 0.004328312346031453
+    },
+    {
+      "name": "N=10, beta=0.1: derivative positive",
+      "ok": true,
+      "value": 0.03516376222762137
+    },
+    {
+      "name": "N=10, beta=1.0: derivative positive",
+      "ok": true,
+      "value": 0.12462806546073754
+    },
+    {
+      "name": "N=10, beta=10.0: derivative positive",
+      "ok": true,
+      "value": 0.09047255828783353
+    },
+    {
+      "name": "N=10, beta=100.0: derivative positive",
+      "ok": true,
+      "value": 0.015494191467705165
+    },
+    {
+      "name": "N=100, beta=0.01: derivative positive",
+      "ok": true,
+      "value": 0.00039584803431257575
+    },
+    {
+      "name": "N=100, beta=0.1: derivative positive",
+      "ok": true,
+      "value": 0.003325835075481216
+    },
+    {
+      "name": "N=100, beta=1.0: derivative positive",
+      "ok": true,
+      "value": 0.010249729838024704
+    },
+    {
+      "name": "N=100, beta=10.0: derivative positive",
+      "ok": true,
+      "value": 0.003667444696596029
+    },
+    {
+      "name": "N=100, beta=100.0: derivative positive",
+      "ok": true,
+      "value": 0.0004453474629871675
+    },
+    {
+      "name": "N=1e5, theta=0.0000: scaled excess within 1e-4 of limit",
+      "ok": true,
+      "observed": 2.0000150000143435,
+      "limit": 2.0
+    },
+    {
+      "name": "N=1e5, theta=-0.2768: scaled excess within 1e-4 of limit",
+      "ok": true,
+      "observed": 1.8455015280416376,
+      "limit": 1.8454915028125263
+    },
+    {
+      "name": "NEG N=3: rotation of the wrong sign increases risk",
+      "ok": true,
+      "canonical": 2.831656193198984,
+      "wrong_sign": 2.958434490651266
+    },
+    {
+      "name": "NEG N=10: rotation of the wrong sign increases risk",
+      "ok": true,
+      "canonical": 2.214933889407475,
+      "wrong_sign": 2.2450521384983535
+    },
+    {
+      "name": "NEG N=3: W=I first variation is zero (|fd|<1e-8)",
+      "ok": true,
+      "fd": 0.0
+    },
+    {
+      "name": "NEG N=10: W=I first variation is zero (|fd|<1e-8)",
+      "ok": true,
+      "fd": 0.0
+    },
+    {
+      "name": "NEG doubled derivative constant is rejected",
+      "ok": true,
+      "claimed": 1.19816162303168,
+      "fd": 0.599080811114483
+    },
+    {
+      "name": "L L^T = P",
+      "ok": true
+    },
+    {
+      "name": "L^T L = W",
+      "ok": true
+    },
+    {
+      "name": "H L = e_1^T",
+      "ok": true
+    },
+    {
+      "name": "det P = 1",
+      "ok": true
+    },
+    {
+      "name": "leading-angle formula matches direct matrix evaluation (1e-14)",
+      "ok": true,
+      "max_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "figure risk_rotation.png written",
+      "ok": true
+    },
+    {
+      "name": "figure risk_rotation.pdf written",
+      "ok": true
+    }
+  ],
+  "n_checks": 82,
+  "failures": [],
+  "status": "PASS"
+}

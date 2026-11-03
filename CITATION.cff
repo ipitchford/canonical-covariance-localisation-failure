@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "Please cite this versioned research candidate by its DOI."
+title: "When canonical covariance localisation fails: Exact finite-ensemble counterexamples, a sharp leading-order criterion, and the Snyder–Hakim test case"
+type: software
+authors:
+  - name: Anonymous
+version: 0.1.0-candidate
+doi: 10.5281/zenodo.23926884
+date-released: 2026-11-03
+repository-code: "https://github.com/ipitchford/canonical-covariance-localisation-failure"
+url: "https://evidencepress.org/releases/canonical-covariance-localisation-failure/"
+license:
+  - CC0-1.0
+  - MIT
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23926884
+    description: "Version DOI (0.1.0-candidate)"
+  - type: doi
+    value: 10.5281/zenodo.23926883
+    description: "Concept DOI (all versions)"
+keywords:
+  - ensemble Kalman filter
+  - covariance localisation
+  - canonical coordinates
+  - data assimilation
+  - whitening
+abstract: "Snyder and Hakim (2022) conjectured that canonical coordinates (whiten the prior and observation errors, then rotate to the singular vectors of the whitened observation operator) are the best basis in which to localise an ensemble covariance. For one analysis step with a Gaussian ensemble and a known prior covariance, the answer depends on the loss. Under physical squared error the conjecture fails at every ensemble size for a scalar observation whose direction is not a prior eigenvector (a small rotation plus complete localisation beats every canonical taper, also with matched variance rescaling), and with several observations an observed-unobserved coupling blocks stationarity. A uniform large-ensemble expansion gives the leading objective F(U) and a sharp criterion for when canonical coordinates minimise it; under prior-normalised loss they always do. In a reconstruction of Snyder and Hakim's 200-variable test case, symmetric (ZCA) whitening removes about 41-54% of the canonical basis's excess error. Unrefereed candidate; internal AI-assisted review only. Text CC0-1.0; code MIT."

@@ -1,0 +1,260 @@
+{
+ "schemaVersion": "1.0",
+ "provenance": "Compiled 3 November 2026 for release 0.1.0-candidate from the dated pre-revision novelty audit (development_notes/novelty_audit.md, 1 November 2026), the internal review searches of 3 November 2026 (REVIEW_SUMMARY.md), a GitHub and Evidence Press corpus check of 3 November 2026 and the Crossref reference retrieval. It documents the scrutiny performed, not historical priority. No new search was run at release preparation.",
+ "contributionMap": [
+  {
+   "claim": "Scalar observation, physical loss: canonical complete localisation is beaten by a small rotation at every N >= 2 whenever H^T is not an eigenvector of P (Theorem 3.3, Corollary 3.4), also against inflated canonical tapers with matched rescaling (Theorem 3.7).",
+   "unit": "statement",
+   "paperLocation": "Section 3",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "general web search engines, publisher full text and arXiv (development_notes/novelty_audit.md)",
+     "query": "Snyder Hakim 2022 optimal linear transformation; canonical observation operators localization; covariance localization loss transformation risk basis; ensemble Kalman rotation mean squared; localisation canonical counterexample"
+    },
+    {
+     "date": "2026-11-03",
+     "corpus": "internal reviewers during review: optimal localisation, sampling-error expansions, transformed/spectral localisation, whitening and shrinkage literatures (REVIEW_SUMMARY.md)",
+     "query": "Flowerdew; Menetrier et al.; Periáñez et al.; Anderson; Morzfeld-Hodyss; van Leeuwen; Hodyss-Morzfeld; Sacher-Bartello; Furrer-Bengtsson; Buehner-Charron; Kessy et al.; Ledoit-Wolf; Bourin; Fujii"
+    },
+    {
+     "date": "2026-11-03",
+     "corpus": "GitHub issues and discussions; Evidence Press release feed",
+     "query": "\"covariance localization\" whitening optimal; Snyder Hakim localization; canonical localisation counterexample; localization basis rotation ensemble Kalman counterexample; related variants"
+    },
+    {
+     "date": "2026-11-03",
+     "corpus": "api.crossref.org",
+     "query": "registry records for every entry in refs.bib (tools/make_refs.py)"
+    }
+   ],
+   "closestPriorWork": "Snyder and Hakim 2022 (conjecture); Flowerdew 2015 (optimal localisation in fixed coordinates)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Lemma 3.1: complete localisation is the best canonical taper with unit observed diagonal.",
+   "unit": "statement",
+   "paperLocation": "Section 3.1",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "general web search engines, publisher full text and arXiv (development_notes/novelty_audit.md)",
+     "query": "Snyder Hakim 2022 optimal linear transformation; canonical observation operators localization; covariance localization loss transformation risk basis; ensemble Kalman rotation mean squared; localisation canonical counterexample"
+    },
+    {
+     "date": "2026-11-03",
+     "corpus": "internal reviewers during review: optimal localisation, sampling-error expansions, transformed/spectral localisation, whitening and shrinkage literatures (REVIEW_SUMMARY.md)",
+     "query": "Flowerdew; Menetrier et al.; Periáñez et al.; Anderson; Morzfeld-Hodyss; van Leeuwen; Hodyss-Morzfeld; Sacher-Bartello; Furrer-Bengtsson; Buehner-Charron; Kessy et al.; Ledoit-Wolf; Bourin; Fujii"
+    }
+   ],
+   "closestPriorWork": "Flowerdew 2015 (zero-correlation case of the optimal localisation factor)",
+   "verdict": "partially-known-cited"
+  },
+  {
+   "claim": "Exact rational certificates for the two-dimensional examples, including a strict local maximum of the risk at the canonical basis.",
+   "unit": "statement",
+   "paperLocation": "Section 4, Appendix A",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "general web search engines, publisher full text and arXiv (development_notes/novelty_audit.md)",
+     "query": "Snyder Hakim 2022 optimal linear transformation; canonical observation operators localization; covariance localization loss transformation risk basis; ensemble Kalman rotation mean squared; localisation canonical counterexample"
+    },
+    {
+     "date": "2026-11-03",
+     "corpus": "internal reviewers during review: optimal localisation, sampling-error expansions, transformed/spectral localisation, whitening and shrinkage literatures (REVIEW_SUMMARY.md)",
+     "query": "Flowerdew; Menetrier et al.; Periáñez et al.; Anderson; Morzfeld-Hodyss; van Leeuwen; Hodyss-Morzfeld; Sacher-Bartello; Furrer-Bengtsson; Buehner-Charron; Kessy et al.; Ledoit-Wolf; Bourin; Fujii"
+    }
+   ],
+   "closestPriorWork": "None found in the bounded search",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Several observations: first variation and the observed-unobserved coupling obstruction at finite N (Proposition 5.1, Corollaries 5.2-5.3).",
+   "unit": "statement",
+   "paperLocation": "Section 5",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "general web search engines, publisher full text and arXiv (development_notes/novelty_audit.md)",
+     "query": "Snyder Hakim 2022 optimal linear transformation; canonical observation operators localization; covariance localization loss transformation risk basis; ensemble Kalman rotation mean squared; localisation canonical counterexample"
+    },
+    {
+     "date": "2026-11-03",
+     "corpus": "internal reviewers during review: optimal localisation, sampling-error expansions, transformed/spectral localisation, whitening and shrinkage literatures (REVIEW_SUMMARY.md)",
+     "query": "Flowerdew; Menetrier et al.; Periáñez et al.; Anderson; Morzfeld-Hodyss; van Leeuwen; Hodyss-Morzfeld; Sacher-Bartello; Furrer-Bengtsson; Buehner-Charron; Kessy et al.; Ledoit-Wolf; Bourin; Fujii"
+    },
+    {
+     "date": "2026-11-03",
+     "corpus": "GitHub issues and discussions; Evidence Press release feed",
+     "query": "\"covariance localization\" whitening optimal; Snyder Hakim localization; canonical localisation counterexample; localization basis rotation ensemble Kalman counterexample; related variants"
+    }
+   ],
+   "closestPriorWork": "Snyder and Hakim 2022 (convention for several observations)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Uniform large-ensemble expansion with leading objective F(U) and the sharp criterion of Theorem 7.1.",
+   "unit": "statement",
+   "paperLocation": "Sections 6-7",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "general web search engines, publisher full text and arXiv (development_notes/novelty_audit.md)",
+     "query": "Snyder Hakim 2022 optimal linear transformation; canonical observation operators localization; covariance localization loss transformation risk basis; ensemble Kalman rotation mean squared; localisation canonical counterexample"
+    },
+    {
+     "date": "2026-11-03",
+     "corpus": "internal reviewers during review: optimal localisation, sampling-error expansions, transformed/spectral localisation, whitening and shrinkage literatures (REVIEW_SUMMARY.md)",
+     "query": "Flowerdew; Menetrier et al.; Periáñez et al.; Anderson; Morzfeld-Hodyss; van Leeuwen; Hodyss-Morzfeld; Sacher-Bartello; Furrer-Bengtsson; Buehner-Charron; Kessy et al.; Ledoit-Wolf; Bourin; Fujii"
+    }
+   ],
+   "closestPriorWork": "Furrer and Bengtsson 2007; Sacher and Bartello 2008 (sampling-error expansions; full text of Furrer-Bengtsson not compared term by term)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Antimonotone trace inequality used in Theorem 7.1.",
+   "unit": "method",
+   "paperLocation": "Section 7",
+   "searches": [
+    {
+     "date": "2026-11-03",
+     "corpus": "internal reviewers during review: optimal localisation, sampling-error expansions, transformed/spectral localisation, whitening and shrinkage literatures (REVIEW_SUMMARY.md)",
+     "query": "Flowerdew; Menetrier et al.; Periáñez et al.; Anderson; Morzfeld-Hodyss; van Leeuwen; Hodyss-Morzfeld; Sacher-Bartello; Furrer-Bengtsson; Buehner-Charron; Kessy et al.; Ledoit-Wolf; Bourin; Fujii"
+    }
+   ],
+   "closestPriorWork": "Bourin 1999; Fujii 2005",
+   "verdict": "known-cited"
+  },
+  {
+   "claim": "Prior-normalised loss: leading-order optimality and the finite-N local criterion (Proposition 8.1).",
+   "unit": "statement",
+   "paperLocation": "Section 8",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "general web search engines, publisher full text and arXiv (development_notes/novelty_audit.md)",
+     "query": "Snyder Hakim 2022 optimal linear transformation; canonical observation operators localization; covariance localization loss transformation risk basis; ensemble Kalman rotation mean squared; localisation canonical counterexample"
+    },
+    {
+     "date": "2026-11-03",
+     "corpus": "internal reviewers during review: optimal localisation, sampling-error expansions, transformed/spectral localisation, whitening and shrinkage literatures (REVIEW_SUMMARY.md)",
+     "query": "Flowerdew; Menetrier et al.; Periáñez et al.; Anderson; Morzfeld-Hodyss; van Leeuwen; Hodyss-Morzfeld; Sacher-Bartello; Furrer-Bengtsson; Buehner-Charron; Kessy et al.; Ledoit-Wolf; Bourin; Fujii"
+    }
+   ],
+   "closestPriorWork": "Snyder and Hakim 2022 (loss-invariant emphasis)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Reconstruction of the Snyder-Hakim testbed with loss-aware and ZCA bases, equivalent ensemble sizes and pilot-estimated bases.",
+   "unit": "identification",
+   "paperLocation": "Section 10",
+   "searches": [
+    {
+     "date": "2026-11-03",
+     "corpus": "internal reviewers during review: optimal localisation, sampling-error expansions, transformed/spectral localisation, whitening and shrinkage literatures (REVIEW_SUMMARY.md)",
+     "query": "Flowerdew; Menetrier et al.; Periáñez et al.; Anderson; Morzfeld-Hodyss; van Leeuwen; Hodyss-Morzfeld; Sacher-Bartello; Furrer-Bengtsson; Buehner-Charron; Kessy et al.; Ledoit-Wolf; Bourin; Fujii"
+    },
+    {
+     "date": "2026-11-03",
+     "corpus": "GitHub issues and discussions; Evidence Press release feed",
+     "query": "\"covariance localization\" whitening optimal; Snyder Hakim localization; canonical localisation counterexample; localization basis rotation ensemble Kalman counterexample; related variants"
+    }
+   ],
+   "closestPriorWork": "Snyder and Hakim 2022 Section 4; Kessy et al. 2018 (ZCA whitening)",
+   "verdict": "new-in-bounded-search"
+  }
+ ],
+ "sourcesReadInFull": [
+  {
+   "citation": "Snyder and Hakim, Journal of Advances in Modeling Earth Systems 14 (2022) e2021MS002937, doi:10.1029/2021MS002937",
+   "usedFor": "Conjecture statement, localisation convention, loss in experiments, testbed specification",
+   "readWhat": "Full text, Sections 1-4 and 7",
+   "date": "2026-11-01",
+   "evidenceLocator": "development_notes/novelty_audit.md; manuscript Sections 1.2 and 10"
+  },
+  {
+   "citation": "Flowerdew, Tellus A 67 (2015) 25257, doi:10.3402/tellusa.v67.25257",
+   "usedFor": "Optimal localisation factor; Lemma 3.1 credit",
+   "readWhat": "Section 2",
+   "date": "2026-11-03",
+   "evidenceLocator": "manuscript Section 1.5; REVIEW_SUMMARY.md"
+  }
+ ],
+ "limitationTriage": [
+  {
+   "limitation": "Priority holds only within a bounded search.",
+   "closingQuestion": "Has a canonical-basis counterexample or the criterion been stated elsewhere?",
+   "triedOrSearched": "Dated searches of 1 and 3 November 2026 (novelty audit, review searches, GitHub corpus check); no subscription-database search; no author enquiry.",
+   "estimatedCost": "days",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "Exhaustive search and author enquiry out of scope; disclosed in the paper and README.",
+   "whyNotClosedNow": "Requires specialist databases and contact with the authors."
+  },
+  {
+   "limitation": "Oracle prior covariance, one analysis step, Gaussian ensemble; no cycling, model error or operational data.",
+   "closingQuestion": "Does the advantage persist with estimated covariances and cycling?",
+   "triedOrSearched": "Pilot-estimated bases in Section 10 (gain fragile).",
+   "estimatedCost": "weeks",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "New research.",
+   "whyNotClosedNow": "Beyond the scope of this release; listed as open problems."
+  },
+  {
+   "limitation": "Conjecture 5.4 and Open problem 8.2 are numerical only.",
+   "closingQuestion": "Can the sign property and zeta > 0 be proved?",
+   "triedOrSearched": "Grids of 660 cases and 14 x 31 x 2 cases.",
+   "estimatedCost": "days",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "Stated as conjecture and open problem in the paper.",
+   "whyNotClosedNow": "Requires separate proofs."
+  },
+  {
+   "limitation": "The testbed is a reconstruction from the text, not a replication of the published figures.",
+   "closingQuestion": "Do the published settings differ?",
+   "triedOrSearched": "Sensitivity to correlation scale and observation count (Section 10.4).",
+   "estimatedCost": "days",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "Original code not used.",
+   "whyNotClosedNow": "Requires the original configuration."
+  },
+  {
+   "limitation": "Verification scripts used assert, wrote in place and had a hard-coded status (review objection).",
+   "closingQuestion": "Do the checks fail under -O and leave shipped results untouched?",
+   "triedOrSearched": "Explicit checks with computed status, --out to new directories, negative controls; -O reruns identical.",
+   "estimatedCost": "2 hours",
+   "decision": "CLOSED",
+   "cheap": true
+  },
+  {
+   "limitation": "The canonical side was not allowed variance inflation (review objection).",
+   "closingQuestion": "Does a rotation still win against inflated canonical tapers?",
+   "triedOrSearched": "Lemmas 3.5-3.6 and Theorem 3.7.",
+   "estimatedCost": "3 hours",
+   "decision": "CLOSED",
+   "cheap": true
+  }
+ ],
+ "extensionScout": {
+  "by": "Internal AI-assisted reviewers and the lead, 3 November 2026",
+  "date": "2026-11-03",
+  "proposals": [
+   "Apply the criterion to the Snyder-Hakim testbed",
+   "Allow canonical variance inflation",
+   "Treat several observations at finite N",
+   "Settle prior-normalised loss at finite N",
+   "Examine the Fourier case and estimated bases"
+  ],
+  "actions": [
+   "Section 10 reconstruction",
+   "Theorem 3.7",
+   "Proposition 5.1 and Corollaries 5.2-5.3",
+   "Proposition 8.1 and Open problem 8.2",
+   "Corollary 10.1 and the estimated-basis study"
+  ]
+ }
+}

@@ -1,0 +1,71 @@
+# Development note: describes the 1 November 2026 pre-revision version of the manuscript; numbering and some statements differ from the current paper.
+target_id: canonical-localisation-risk-and-leading-basis-objective
+search_date: 2026-11-01
+intended_contribution_unit: theorem-and-risk-identification
+claim:
+  exact_statement: |
+    For every fixed dimension m>=2, finite N>=2, scalar whitened observation
+    y=h z_1+epsilon with h>0, and Gaussian iid ensemble independent of truth,
+    complete localisation in canonical coordinates minimises physical
+    mean-squared analysis risk among deterministic unit-diagonal correlation
+    Schur tapers. If the physical loss matrix W has some W_1j != 0,
+    an orthogonal rotation followed by complete localisation strictly improves
+    that minimum. The exact first variation is
+    2 W_1j h^2 E[(D-1)(D-a)/(1+h^2 D)^2], D~chi_square(N-1)/(N-1),
+    a=1+1/N (estimated mean) or 1 (known mean).
+    Separately, for fixed general observation matrix G, leading risk depends
+    on F(U)=sum_i (u_i^T B u_i)(u_i^T A u_i), C=(I+G^TG)^-1,
+    B=I-C, A=CWC, through 2F(U)/(N-1), with uniform O((N-1)^-3/2) remainder.
+  exclusions:
+    - Adaptive sample-dependent tapers and unrestricted covariance estimators.
+    - Dimension-growing limits and operational repeated nonlinear filtering.
+    - Novelty of the classical antimonotone-pair trace inequality.
+    - Priority assertions based only on search negatives.
+source:
+  originating_reference: Snyder and Hakim (2022), An optimal linear transformation for data assimilation, Sections 3 and 4.
+  url: https://doi.org/10.1029/2021MS002937
+normalisation:
+  indices: State coordinates 1 through m; coordinate 1 is scalar observed direction.
+  scaling: Prior and observation noise whitened; sample covariance denominator N-1.
+  basis_order: Q_theta first column (cos theta,sin theta), second (-sin theta,cos theta).
+  symmetries:
+    - Sign changes and permutation of orthogonal basis columns.
+    - Rotations in degenerate observation-strength eigenspaces.
+sequences:
+  - name: derivative-certificate g_nu for nu=1,2,3
+    exact_values: [2/25, 2/21, 2/21]
+    natural_scalings: [g_nu=2nu/(2nu^2+11nu+12)]
+  - name: exact objective angle values at zero, minus pi/8, pi/4
+    exact_values: [1/4, 3/16, 3/8]
+    natural_scalings: [4, 3, 6]
+generating_functions:
+  - name: standard gamma Laplace transform; not a new object
+    expression: (1+2t/nu)^(-nu/2)
+    variables: [t]
+matrices:
+  - name: physical_prior_P2
+    entries: [[1, 1], [1, 2]]
+  - name: physical_prior_P3
+    entries: [[1, 1, 0], [1, 2, 0], [0, 0, 1]]
+  - name: physical_prior_P4
+    entries: [[1, 1, 0, 0], [1, 2, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]
+  - name: A
+    entries: [[1/2, 1/2], [1/2, 1]]
+  - name: B
+    entries: [[1/2, 0], [0, 0]]
+aliases:
+  analysis: [matrix Chebyshev inequality, antimonotone operator pair, products of Rayleigh quotients]
+  probability: [Wishart variances, gamma resolvent moments, sampling-error gain bias]
+  combinatorics: [orthostochastic matrix, doubly stochastic matrix, rearrangement inequality]
+  mathematical_physics: [diagonal pinching, dephasing, conditional expectation]
+  statistics_optimisation_ml: [decision-weighted covariance estimation, orthogonal basis selection, complete covariance localisation]
+known_invariants:
+  physical_Pm: determinant 1, trace m+1, characteristic polynomial (lambda^2-3lambda+1)(lambda-1)^(m-2)
+  A: trace 3/2, determinant 1/4, characteristic polynomial lambda^2-3lambda/2+1/4
+  B: trace 1/2, determinant 0, rank 1
+  objective_alias: F(U)=tr(Delta_U(A)Delta_U(B))
+  commuting_alias: F(U)=a^T M M^T b, M_ji=U_ji^2
+search_constraints:
+  primary_sources_only_for_technical_claims: true
+  databases_or_corpora: [two general web-search systems, publisher full text, arXiv, author-hosted manuscripts and presentations]
+  boundary: No private citation databases or author enquiries; negative search does not establish priority.

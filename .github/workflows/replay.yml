@@ -1,0 +1,41 @@
+# SPDX-License-Identifier: MIT
+name: Replay
+on:
+  push:
+  pull_request:
+jobs:
+  checks:
+    name: Manifest and all four verification scripts (normal and -O)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      OMP_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+      MPLBACKEND: Agg
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Check MANIFEST.sha256
+        run: sha256sum -c MANIFEST.sha256
+      - name: Install pinned packages
+        run: python -m pip install -r requirements.txt
+      - name: Exact certificates (normal and -O; standard library)
+        run: |
+          python -I -B scripts/exact_certificates.py --out "$RUNNER_TEMP/exact"
+          python -I -B -O scripts/exact_certificates.py --out "$RUNNER_TEMP/exact-O"
+      - name: Numerical checks (normal and -O)
+        run: |
+          python -I -B scripts/numerical_checks.py --out "$RUNNER_TEMP/num"
+          python -I -B -O scripts/numerical_checks.py --out "$RUNNER_TEMP/num-O"
+      - name: Theory checks (normal and -O)
+        run: |
+          python -I -B scripts/theory_checks.py --out "$RUNNER_TEMP/theory"
+          python -I -B -O scripts/theory_checks.py --out "$RUNNER_TEMP/theory-O"
+      - name: Snyder-Hakim testbed reconstruction (normal and -O)
+        run: |
+          python -I -B scripts/sh_testbed.py --out "$RUNNER_TEMP/sh"
+          python -I -B -O scripts/sh_testbed.py --out "$RUNNER_TEMP/sh-O"
+      - name: Working tree unchanged
+        run: test -z "$(git status --porcelain)"

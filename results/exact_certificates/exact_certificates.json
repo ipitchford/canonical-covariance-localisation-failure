@@ -1,0 +1,251 @@
+{
+  "script": "exact_certificates.py",
+  "script_sha256": "2cb0bc42e9029b2ba9da85814b53dc3984db169b61c2b4c593adf1c843986ddc",
+  "python": "3.11.14",
+  "platform": "macOS-27.2-arm64-arm-64bit",
+  "optimize_flag": 0,
+  "scope": "exact rational arithmetic for the finite constants used in the proofs; the probabilistic and differentiation arguments are proved in the manuscript",
+  "polynomial_coefficients": [
+    "713/773",
+    "-413/773",
+    "113/773",
+    "-13/773",
+    "1/1546"
+  ],
+  "integral_p": "460/773",
+  "integral_weighted_square": "460/773",
+  "lower_bound_c": "460/773",
+  "curvature_upper_bounds": {
+    "known_mean": "-56/773",
+    "ensemble_mean_N3": "-508/773"
+  },
+  "hessian_bound": "23148",
+  "finite_angle_examples_by_ensemble_size": {
+    "2": {
+      "gradient_lower": "2/25",
+      "cayley_parameter": "1/1157400",
+      "risk_gap_upper": "-1/28935000",
+      "orthogonality_identity": "exact"
+    },
+    "3": {
+      "gradient_lower": "2/21",
+      "cayley_parameter": "1/972216",
+      "risk_gap_upper": "-1/20416536",
+      "orthogonality_identity": "exact"
+    },
+    "4": {
+      "gradient_lower": "2/21",
+      "cayley_parameter": "1/972216",
+      "risk_gap_upper": "-1/20416536",
+      "orthogonality_identity": "exact"
+    },
+    "10": {
+      "gradient_lower": "6/91",
+      "cayley_parameter": "1/1404312",
+      "risk_gap_upper": "-1/42597464",
+      "orthogonality_identity": "exact"
+    },
+    "100": {
+      "gradient_lower": "66/6901",
+      "cayley_parameter": "11/106496232",
+      "risk_gap_upper": "-121/244976832344",
+      "orthogonality_identity": "exact"
+    }
+  },
+  "negative_controls": {
+    "perturbed_polynomial_lower_c": "355578/597529",
+    "halved_fourth_moment_H0": "14508"
+  },
+  "checks": [
+    {
+      "name": "integral of p e^{-x} equals 460/773",
+      "ok": true,
+      "value": "460/773"
+    },
+    {
+      "name": "integral of (1+x) p^2 e^{-x} equals 460/773",
+      "ok": true,
+      "value": "460/773"
+    },
+    {
+      "name": "lower bound c >= 460/773",
+      "ok": true,
+      "value": "460/773"
+    },
+    {
+      "name": "curvature upper bound known_mean is negative",
+      "ok": true,
+      "value": "-56/773"
+    },
+    {
+      "name": "curvature upper bound known_mean equals -56/773",
+      "ok": true,
+      "value": "-56/773"
+    },
+    {
+      "name": "curvature upper bound ensemble_mean_N3 is negative",
+      "ok": true,
+      "value": "-508/773"
+    },
+    {
+      "name": "curvature upper bound ensemble_mean_N3 equals -508/773",
+      "ok": true,
+      "value": "-508/773"
+    },
+    {
+      "name": "E[T(1+T)^2] bound equals 66",
+      "ok": true,
+      "value": "66"
+    },
+    {
+      "name": "E[T^2(1+T)^2] bound equals 488",
+      "ok": true,
+      "value": "488"
+    },
+    {
+      "name": "H_0 equals 23148",
+      "ok": true,
+      "value": "23148"
+    },
+    {
+      "name": "gamma moment bounds 2,8,48,384 hold for nu = 1..200",
+      "ok": true,
+      "max_ratio": "1"
+    },
+    {
+      "name": "nu=1: 0 < t < 1",
+      "ok": true,
+      "t": "1/1157400"
+    },
+    {
+      "name": "nu=1: risk gap bound negative",
+      "ok": true,
+      "gap": "-1/28935000"
+    },
+    {
+      "name": "nu=1: Cayley rotation exactly orthogonal",
+      "ok": true
+    },
+    {
+      "name": "nu=1: Taylor bound at delta in {t,2t} below gap",
+      "ok": true,
+      "worst": "-7/115740000",
+      "gap": "-1/28935000"
+    },
+    {
+      "name": "nu=2: 0 < t < 1",
+      "ok": true,
+      "t": "1/972216"
+    },
+    {
+      "name": "nu=2: risk gap bound negative",
+      "ok": true,
+      "gap": "-1/20416536"
+    },
+    {
+      "name": "nu=2: Cayley rotation exactly orthogonal",
+      "ok": true
+    },
+    {
+      "name": "nu=2: Taylor bound at delta in {t,2t} below gap",
+      "ok": true,
+      "worst": "-1/11666592",
+      "gap": "-1/20416536"
+    },
+    {
+      "name": "nu=3: 0 < t < 1",
+      "ok": true,
+      "t": "1/972216"
+    },
+    {
+      "name": "nu=3: risk gap bound negative",
+      "ok": true,
+      "gap": "-1/20416536"
+    },
+    {
+      "name": "nu=3: Cayley rotation exactly orthogonal",
+      "ok": true
+    },
+    {
+      "name": "nu=3: Taylor bound at delta in {t,2t} below gap",
+      "ok": true,
+      "worst": "-1/11666592",
+      "gap": "-1/20416536"
+    },
+    {
+      "name": "nu=9: 0 < t < 1",
+      "ok": true,
+      "t": "1/1404312"
+    },
+    {
+      "name": "nu=9: risk gap bound negative",
+      "ok": true,
+      "gap": "-1/42597464"
+    },
+    {
+      "name": "nu=9: Cayley rotation exactly orthogonal",
+      "ok": true
+    },
+    {
+      "name": "nu=9: Taylor bound at delta in {t,2t} below gap",
+      "ok": true,
+      "worst": "-1/24341408",
+      "gap": "-1/42597464"
+    },
+    {
+      "name": "nu=99: 0 < t < 1",
+      "ok": true,
+      "t": "11/106496232"
+    },
+    {
+      "name": "nu=99: risk gap bound negative",
+      "ok": true,
+      "gap": "-121/244976832344"
+    },
+    {
+      "name": "nu=99: Cayley rotation exactly orthogonal",
+      "ok": true
+    },
+    {
+      "name": "nu=99: Taylor bound at delta in {t,2t} below gap",
+      "ok": true,
+      "worst": "-847/979907329376",
+      "gap": "-121/244976832344"
+    },
+    {
+      "name": "N=3 Cayley parameter equals 1/972216",
+      "ok": true,
+      "value": "1/972216"
+    },
+    {
+      "name": "N=3 risk gap bound equals -1/20416536",
+      "ok": true,
+      "value": "-1/20416536"
+    },
+    {
+      "name": "NEG perturbed polynomial does not reproduce 460/773",
+      "ok": true,
+      "value": "355578/597529"
+    },
+    {
+      "name": "NEG halved fourth-moment bound (smaller H_0) is violated at nu=1",
+      "ok": true,
+      "exact": "384",
+      "claimed": "192"
+    },
+    {
+      "name": "NEG a gap claimed twice as large is rejected",
+      "ok": true,
+      "worst": "-1/11666592",
+      "claimed": "-1/10208268"
+    },
+    {
+      "name": "NEG weaker lower bound 459/773 does not give -508/773",
+      "ok": true,
+      "value": "-1030/2319"
+    }
+  ],
+  "n_checks": 37,
+  "failures": [],
+  "status": "PASS"
+}
