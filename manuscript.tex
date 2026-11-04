@@ -38,7 +38,7 @@
  and the Snyder--Hakim test case}
 \author{Anonymous\thanks{Text released under CC0~1.0; code under the MIT licence.
  See the accompanying reproducibility package.}}
-\date{3 November 2026}
+\date{3 November 2026; version 0.2.0-candidate, 4 November 2026}
 \begin{document}
 \maketitle
 
@@ -224,7 +224,7 @@ Snyder--Hakim testbed (reconstruction) & For \(N=8\) to \(64\), the best basis f
 \end{tabularx}
 \end{table}
 
-\subsection{Relation to optimal-localisation and sampling-error theory}
+\subsection{Relation to optimal-localisation and sampling-error theory}\label{sec:relation}
 
 \emph{Optimal localisation in fixed coordinates.} Flowerdew \cite{Flowerdew2015} derives
 the localisation factor that minimises expected analysis error for a single observation,
@@ -232,6 +232,15 @@ of the form \(Q^2/(1+Q^2)\) with \(Q\) the ratio of the true correlation to its 
 standard deviation \cite[Section~2]{Flowerdew2015}; the factor vanishes when the true
 correlation vanishes. In canonical coordinates every relevant true correlation is zero, and
 our Lemma~\ref{lem:taper} is the exact finite-\(N\) form of that zero-correlation case.
+Earlier, Furrer and Bengtsson \cite[Eq.~(20)]{FurrerBengtsson2007} minimised the Frobenius
+mean squared error of a tapered prior covariance entry by entry and obtained
+\(c_{ij}=p_{ij}^2/\{p_{ij}^2+(p_{ij}^2+p_{ii}p_{jj})/n\}\), which has the same \(Q^2/(1+Q^2)\) form
+and also vanishes when \(p_{ij}=0\). For a diagonal prior with \(H=R=I\), where the prior
+eigenbasis is a canonical basis, their second-order approximation to the error of the propagated
+analysis covariance \cite[Eq.~(17)]{FurrerBengtsson2007} is likewise minimised by setting every
+off-diagonal taper entry to zero. That is a covariance-error analogue of Lemma~\ref{lem:taper} and
+Lemma~\ref{lem:taperk}; our versions score the analysis mean, and Lemma~\ref{lem:taper} is exact at
+every \(N\).
 Flowerdew mostly neglects sampling error in variances \cite[Section~2.2]{Flowerdew2015}; our
 Theorem~\ref{thm:gradient} is driven precisely by it. Ménétrier and co-authors develop
 optimality criteria for linearly filtering sample covariances
@@ -248,14 +257,28 @@ covariance error of complete localisation is the same in every orthonormal basis
 
 \emph{Gain bias and sampling-error expansions.} The positivity in
 Theorem~\ref{thm:gradient} comes from the nonlinearity of the gain in the sample variance,
-the mechanism behind the gain bias of van Leeuwen \cite{vanLeeuwen1999} and Hodyss and
-Morzfeld \cite{HodyssMorzfeld2023}. Theorem~\ref{thm:expansion} is a sampling-error
-expansion in the tradition of Sacher and Bartello \cite{SacherBartello2008}, who express the
-analysis error in terms of the sampling noise in the background covariance, and of Furrer and
-Bengtsson \cite{FurrerBengtsson2007}, who study tapered estimators of prior and posterior
-covariances in Kalman filter variants; we have not compared their expansions term by term
-with ours. The new element is uniformity over the basis, which makes \(F(U)\) a
-basis-selection objective. Non-asymptotic bounds for ensemble updates with localisation are
+the mechanism behind the gain bias of van Leeuwen \cite{vanLeeuwen1999}, of Furrer and
+Bengtsson, who prove by Jensen's inequality that the sample gain and the posterior sample
+covariance are biased low \cite[Section~2.3, Eq.~(6) and Corollaries~2--3]{FurrerBengtsson2007},
+and of Hodyss and Morzfeld \cite{HodyssMorzfeld2023}. Furrer and Bengtsson also choose an
+inflation factor that removes the second-order bias of \(\tr\hat K\)
+\cite[Section~5, Eq.~(26)]{FurrerBengtsson2007}; Lemma~\ref{lem:taustar} instead chooses the
+factor that minimises the analysis risk, and Theorem~\ref{thm:inflation} lets the rotated
+basis use it too. Theorem~\ref{thm:expansion} is a sampling-error expansion in the tradition of
+Sacher and Bartello \cite{SacherBartello2008}, who express the analysis error in terms of the
+sampling noise in the background covariance, and of Furrer and Bengtsson. Their expansion
+\cite[Proposition~6, Eqs.~(14)--(15) and Lemma~9]{FurrerBengtsson2007} differs from ours term by
+term. It concerns the Frobenius error of the propagated analysis covariance
+\((I-\hat KH)\hat P^f\) rather than the error of the analysis mean. It is written in the fixed
+eigenbasis of the prior with \(H=R=I\), for the untapered sample covariance. It holds on the event
+that a Neumann series converges, and its remainder order is stated as a belief rather than
+proved. Its leading term,
+\(n^{-1}\{\sum_i\lambda_i^2/(\lambda_i+1)^4+\sum_{i,j}\lambda_i\lambda_j/[(\lambda_i+1)^3(\lambda_j+1)]\}\),
+has no counterpart of \(F(U)\). They use the eigenbasis rotation only as a device of proof and
+never optimise over bases. Their error criterion is of the kind that
+Remark~\ref{rem:frobenius} shows cannot distinguish whitened bases. The new element here is
+uniformity over the basis, with a proved remainder, which makes \(F(U)\) a basis-selection
+objective. Non-asymptotic bounds for ensemble updates with localisation are
 given by Al-Ghattas and Sanz-Alonso \cite{AlGhattas2024}.
 
 \emph{Localisation in transformed variables.} Choosing a basis and then localising, often
@@ -1753,9 +1776,13 @@ exits with an error if any check fails. The paper received internal, AI-assisted
 has not been externally peer reviewed. The literature search behind the novelty statement was
 bounded and is dated 3~November~2026; it is not a certificate of priority.
 
-This is version 0.1.0-candidate, an unrefereed research candidate. The paper, its \LaTeX{} source, the
+This is version 0.2.0-candidate, an unrefereed research candidate. It corrects version
+0.1.0-candidate (doi:10.5281/zenodo.23926884) only in how it cites Furrer and Bengtsson
+\cite{FurrerBengtsson2007}. Their paper has now been compared in full with this one, and
+Section~\ref{sec:relation} states what it already contains. No theorem, proof, computation or
+recorded output has changed. The paper, its \LaTeX{} source, the
 scripts and their recorded outputs are archived at
-\href{https://doi.org/10.5281/zenodo.23926884}{doi:10.5281/zenodo.23926884} (all versions:
+\href{https://doi.org/10.5281/zenodo.23941881}{doi:10.5281/zenodo.23941881} (all versions:
 \href{https://doi.org/10.5281/zenodo.23926883}{doi:10.5281/zenodo.23926883}) and in the repository\newline
 \url{https://github.com/ipitchford/canonical-covariance-localisation-failure}.
 

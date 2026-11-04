@@ -1,8 +1,8 @@
-# AI index: when canonical covariance localisation fails (v0.1.0-candidate)
+# AI index: when canonical covariance localisation fails (v0.2.0-candidate)
 
 Machine-oriented map of claims, evidence and limits. Human readers should start with
 [README.md](README.md) and the paper [canonical_localisation.pdf](canonical_localisation.pdf).
-DOI: https://doi.org/10.5281/zenodo.23926884 (concept DOI 10.5281/zenodo.23926883).
+DOI: https://doi.org/10.5281/zenodo.23941881 (concept DOI 10.5281/zenodo.23926883). Supersedes 0.1.0-candidate (10.5281/zenodo.23926884) by a citation correction only; see [CORRECTIONS.md](CORRECTIONS.md).
 Release page: https://evidencepress.org/releases/canonical-covariance-localisation-failure/
 
 ## Question

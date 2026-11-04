@@ -2,9 +2,9 @@
 
 **Exact finite-ensemble counterexamples, a sharp leading-order criterion, and the Snyder–Hakim test case**
 
-Author: Anonymous · Date: 3 November 2026 · Text CC0 1.0 · Code MIT (see `LICENSE.md`)
+Author: Anonymous · Date: 3 November 2026 (version 0.2.0-candidate: 4 November 2026) · Text CC0 1.0 · Code MIT (see `LICENSE.md`)
 
-Version 0.1.0-candidate (unrefereed research candidate) · DOI [10.5281/zenodo.23926884](https://doi.org/10.5281/zenodo.23926884) · Concept DOI (all versions) [10.5281/zenodo.23926883](https://doi.org/10.5281/zenodo.23926883) · Release page <https://evidencepress.org/releases/canonical-covariance-localisation-failure/>
+Version 0.2.0-candidate (unrefereed research candidate) · DOI [10.5281/zenodo.23941881](https://doi.org/10.5281/zenodo.23941881) · Supersedes 0.1.0-candidate ([10.5281/zenodo.23926884](https://doi.org/10.5281/zenodo.23926884)); see `CORRECTIONS.md` · Concept DOI (all versions) [10.5281/zenodo.23926883](https://doi.org/10.5281/zenodo.23926883) · Release page <https://evidencepress.org/releases/canonical-covariance-localisation-failure/>
 
 ## In plain English
 
@@ -40,6 +40,7 @@ The proofs are written out in full but are not machine-verified. Numerical resul
 | `RESEARCH_GATES.json` | Dated record of the prior-art scrutiny, contribution map and limitation triage. |
 | `CITATION.cff`, `.zenodo.json` | Citation and archive metadata. |
 | `requirements.txt`, `.github/workflows/replay.yml` | Pinned packages and the CI replay (manifest check; all four scripts in normal and `-O` modes). |
+| `CORRECTIONS.md` | Correction history: what changed from 0.1.0-candidate and why. |
 | `MANIFEST.sha256` | SHA-256 hashes of every other file in the package. |
 
 ## How to reproduce
@@ -121,6 +122,6 @@ Limits on the results:
 
 ## How to cite
 
-Anonymous (2026). *When canonical covariance localisation fails: Exact finite-ensemble counterexamples, a sharp leading-order criterion, and the Snyder–Hakim test case* (version 0.1.0-candidate) [unrefereed research candidate]. Zenodo. https://doi.org/10.5281/zenodo.23926884
+Anonymous (2026). *When canonical covariance localisation fails: Exact finite-ensemble counterexamples, a sharp leading-order criterion, and the Snyder–Hakim test case* (version 0.2.0-candidate) [unrefereed research candidate]. Zenodo. https://doi.org/10.5281/zenodo.23941881
 
 To cite all versions, use the concept DOI https://doi.org/10.5281/zenodo.23926883. Machine-readable metadata are in `CITATION.cff`.

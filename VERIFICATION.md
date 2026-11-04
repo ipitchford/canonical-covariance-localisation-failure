@@ -84,4 +84,4 @@ The testbed numbers equal those of the development run made with numpy 2.4.6 and
 - Floating-point values are not interval enclosures.
 - The O(ν⁻²) remainder is a sketch only.
 - Conjecture 5.4 and Open problem 8.2 are supported only numerically.
-- The Furrer–Bengtsson (2007) full text could not be retrieved during this revision. It is cited only for what its title and record state; its expansions were not compared with Theorem 6.1.
+- Version 0.2.0-candidate compares Furrer and Bengtsson (2007) in full with this paper (Section 1.5). Their optimal taper (their Eq. 20), diagonal-prior taper result (Eq. 17), Jensen gain bias (Cor. 2-3) and gain-bias inflation (Eq. 26) are credited. Their covariance-error expansion (Prop. 6) is a different object from Theorem 6.1: it is in a fixed eigenbasis, for the untapered estimator, with an unproved remainder, and it has no basis objective. No claim in this ledger changed.

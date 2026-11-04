@@ -1,6 +1,6 @@
 {
  "schemaVersion": "1.0",
- "provenance": "Compiled 3 November 2026 for release 0.1.0-candidate from the dated pre-revision novelty audit (development_notes/novelty_audit.md, 1 November 2026), the internal review searches of 3 November 2026 (REVIEW_SUMMARY.md), a GitHub and Evidence Press corpus check of 3 November 2026 and the Crossref reference retrieval. It documents the scrutiny performed, not historical priority. No new search was run at release preparation.",
+ "provenance": "Compiled 3 November 2026 for release 0.1.0-candidate from the dated pre-revision novelty audit (development_notes/novelty_audit.md, 1 November 2026), the internal review searches of 3 November 2026 (REVIEW_SUMMARY.md), a GitHub and Evidence Press corpus check of 3 November 2026 and the Crossref reference retrieval. It documents the scrutiny performed, not historical priority. No new search was run at release preparation. Version 0.2.0-candidate (4 November 2026) adds a full-text comparison with Furrer and Bengtsson (2007); no verdict changed.",
  "contributionMap": [
   {
    "claim": "Scalar observation, physical loss: canonical complete localisation is beaten by a small rotation at every N >= 2 whenever H^T is not an eigenvector of P (Theorem 3.3, Corollary 3.4), also against inflated canonical tapers with matched rescaling (Theorem 3.7).",
@@ -26,6 +26,11 @@
      "date": "2026-11-03",
      "corpus": "api.crossref.org",
      "query": "registry records for every entry in refs.bib (tools/make_refs.py)"
+    },
+    {
+     "date": "2026-11-04",
+     "corpus": "Furrer and Bengtsson (2007), J. Multivariate Anal. 98:227-255, full text including appendix",
+     "query": "term-by-term comparison of tapering, inflation and covariance-error expansions with Theorems 3.3, 6.1 and 7.1 and Lemmas 3.1 and 7.4"
     }
    ],
    "closestPriorWork": "Snyder and Hakim 2022 (conjecture); Flowerdew 2015 (optimal localisation in fixed coordinates)",
@@ -45,6 +50,11 @@
      "date": "2026-11-03",
      "corpus": "internal reviewers during review: optimal localisation, sampling-error expansions, transformed/spectral localisation, whitening and shrinkage literatures (REVIEW_SUMMARY.md)",
      "query": "Flowerdew; Menetrier et al.; Periáñez et al.; Anderson; Morzfeld-Hodyss; van Leeuwen; Hodyss-Morzfeld; Sacher-Bartello; Furrer-Bengtsson; Buehner-Charron; Kessy et al.; Ledoit-Wolf; Bourin; Fujii"
+    },
+    {
+     "date": "2026-11-04",
+     "corpus": "Furrer and Bengtsson (2007), J. Multivariate Anal. 98:227-255, full text including appendix",
+     "query": "term-by-term comparison of tapering, inflation and covariance-error expansions with Theorems 3.3, 6.1 and 7.1 and Lemmas 3.1 and 7.4"
     }
    ],
    "closestPriorWork": "Flowerdew 2015 (zero-correlation case of the optimal localisation factor)",
@@ -64,6 +74,11 @@
      "date": "2026-11-03",
      "corpus": "internal reviewers during review: optimal localisation, sampling-error expansions, transformed/spectral localisation, whitening and shrinkage literatures (REVIEW_SUMMARY.md)",
      "query": "Flowerdew; Menetrier et al.; Periáñez et al.; Anderson; Morzfeld-Hodyss; van Leeuwen; Hodyss-Morzfeld; Sacher-Bartello; Furrer-Bengtsson; Buehner-Charron; Kessy et al.; Ledoit-Wolf; Bourin; Fujii"
+    },
+    {
+     "date": "2026-11-04",
+     "corpus": "Furrer and Bengtsson (2007), J. Multivariate Anal. 98:227-255, full text including appendix",
+     "query": "term-by-term comparison of tapering, inflation and covariance-error expansions with Theorems 3.3, 6.1 and 7.1 and Lemmas 3.1 and 7.4"
     }
    ],
    "closestPriorWork": "None found in the bounded search",
@@ -88,6 +103,11 @@
      "date": "2026-11-03",
      "corpus": "GitHub issues and discussions; Evidence Press release feed",
      "query": "\"covariance localization\" whitening optimal; Snyder Hakim localization; canonical localisation counterexample; localization basis rotation ensemble Kalman counterexample; related variants"
+    },
+    {
+     "date": "2026-11-04",
+     "corpus": "Furrer and Bengtsson (2007), J. Multivariate Anal. 98:227-255, full text including appendix",
+     "query": "term-by-term comparison of tapering, inflation and covariance-error expansions with Theorems 3.3, 6.1 and 7.1 and Lemmas 3.1 and 7.4"
     }
    ],
    "closestPriorWork": "Snyder and Hakim 2022 (convention for several observations)",
@@ -107,9 +127,14 @@
      "date": "2026-11-03",
      "corpus": "internal reviewers during review: optimal localisation, sampling-error expansions, transformed/spectral localisation, whitening and shrinkage literatures (REVIEW_SUMMARY.md)",
      "query": "Flowerdew; Menetrier et al.; Periáñez et al.; Anderson; Morzfeld-Hodyss; van Leeuwen; Hodyss-Morzfeld; Sacher-Bartello; Furrer-Bengtsson; Buehner-Charron; Kessy et al.; Ledoit-Wolf; Bourin; Fujii"
+    },
+    {
+     "date": "2026-11-04",
+     "corpus": "Furrer and Bengtsson (2007), J. Multivariate Anal. 98:227-255, full text including appendix",
+     "query": "term-by-term comparison of tapering, inflation and covariance-error expansions with Theorems 3.3, 6.1 and 7.1 and Lemmas 3.1 and 7.4"
     }
    ],
-   "closestPriorWork": "Furrer and Bengtsson 2007; Sacher and Bartello 2008 (sampling-error expansions; full text of Furrer-Bengtsson not compared term by term)",
+   "closestPriorWork": "Furrer and Bengtsson 2007 (covariance-error expansion in a fixed eigenbasis, optimal taper, gain bias; compared term by term on 4 November 2026, no basis objective); Sacher and Bartello 2008",
    "verdict": "new-in-bounded-search"
   },
   {
@@ -121,6 +146,11 @@
      "date": "2026-11-03",
      "corpus": "internal reviewers during review: optimal localisation, sampling-error expansions, transformed/spectral localisation, whitening and shrinkage literatures (REVIEW_SUMMARY.md)",
      "query": "Flowerdew; Menetrier et al.; Periáñez et al.; Anderson; Morzfeld-Hodyss; van Leeuwen; Hodyss-Morzfeld; Sacher-Bartello; Furrer-Bengtsson; Buehner-Charron; Kessy et al.; Ledoit-Wolf; Bourin; Fujii"
+    },
+    {
+     "date": "2026-11-04",
+     "corpus": "Furrer and Bengtsson (2007), J. Multivariate Anal. 98:227-255, full text including appendix",
+     "query": "term-by-term comparison of tapering, inflation and covariance-error expansions with Theorems 3.3, 6.1 and 7.1 and Lemmas 3.1 and 7.4"
     }
    ],
    "closestPriorWork": "Bourin 1999; Fujii 2005",
@@ -140,6 +170,11 @@
      "date": "2026-11-03",
      "corpus": "internal reviewers during review: optimal localisation, sampling-error expansions, transformed/spectral localisation, whitening and shrinkage literatures (REVIEW_SUMMARY.md)",
      "query": "Flowerdew; Menetrier et al.; Periáñez et al.; Anderson; Morzfeld-Hodyss; van Leeuwen; Hodyss-Morzfeld; Sacher-Bartello; Furrer-Bengtsson; Buehner-Charron; Kessy et al.; Ledoit-Wolf; Bourin; Fujii"
+    },
+    {
+     "date": "2026-11-04",
+     "corpus": "Furrer and Bengtsson (2007), J. Multivariate Anal. 98:227-255, full text including appendix",
+     "query": "term-by-term comparison of tapering, inflation and covariance-error expansions with Theorems 3.3, 6.1 and 7.1 and Lemmas 3.1 and 7.4"
     }
    ],
    "closestPriorWork": "Snyder and Hakim 2022 (loss-invariant emphasis)",
@@ -159,6 +194,11 @@
      "date": "2026-11-03",
      "corpus": "GitHub issues and discussions; Evidence Press release feed",
      "query": "\"covariance localization\" whitening optimal; Snyder Hakim localization; canonical localisation counterexample; localization basis rotation ensemble Kalman counterexample; related variants"
+    },
+    {
+     "date": "2026-11-04",
+     "corpus": "Furrer and Bengtsson (2007), J. Multivariate Anal. 98:227-255, full text including appendix",
+     "query": "term-by-term comparison of tapering, inflation and covariance-error expansions with Theorems 3.3, 6.1 and 7.1 and Lemmas 3.1 and 7.4"
     }
    ],
    "closestPriorWork": "Snyder and Hakim 2022 Section 4; Kessy et al. 2018 (ZCA whitening)",

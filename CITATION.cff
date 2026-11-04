@@ -4,9 +4,9 @@ title: "When canonical covariance localisation fails: Exact finite-ensemble coun
 type: software
 authors:
   - name: Anonymous
-version: 0.1.0-candidate
-doi: 10.5281/zenodo.23926884
-date-released: 2026-11-03
+version: 0.2.0-candidate
+doi: 10.5281/zenodo.23941881
+date-released: 2026-11-04
 repository-code: "https://github.com/ipitchford/canonical-covariance-localisation-failure"
 url: "https://evidencepress.org/releases/canonical-covariance-localisation-failure/"
 license:
@@ -14,8 +14,8 @@ license:
   - MIT
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.23926884
-    description: "Version DOI (0.1.0-candidate)"
+    value: 10.5281/zenodo.23941881
+    description: "Version DOI (0.2.0-candidate)"
   - type: doi
     value: 10.5281/zenodo.23926883
     description: "Concept DOI (all versions)"

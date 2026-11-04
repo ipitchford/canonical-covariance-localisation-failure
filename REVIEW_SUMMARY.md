@@ -40,7 +40,7 @@ All reviewers agreed that reading Snyder and Hakim's conjecture with physical me
 - **Tuned distance-based localisation and cycling.** Neither was added to the testbed. Both are listed as limits and open problems.
 - **References without a verified record or a real role in the text.** These were not cited. Examples are Bhatia's *Matrix Analysis*, the Mandel and Kwiatkowski convergence papers and some localisation papers suggested in review.
 - **Optional schematic figure.** It was not added. The mechanism is explained in words instead (Section 3.2).
-- **Furrer and Bengtsson (2007).** The accepted manuscript could not be retrieved during the revision, because the repository was unavailable. The paper cites it only for its subject and says explicitly that its expansions were not compared term by term with Theorem 6.1.
+- **Furrer and Bengtsson (2007).** In version 0.1.0-candidate this paper was cited only for its subject. Version 0.2.0-candidate compares it term by term (Section 1.5 and `CORRECTIONS.md`). It credits their optimal-taper formula, their diagonal-prior taper result, their Jensen gain-bias corollaries and their gain-bias inflation rule. It also states how their covariance-error expansion differs from Theorem 6.1. No result changed.
 - **Two references the draft cited from memory.** The draft theory fragment cited Karlin's *Total Positivity* and a specific theorem number in Horn and Johnson; both have been dropped. They are replaced by self-contained arguments: a monotone-likelihood-ratio proof, a Stein-identity proof and a direct Schur-multiplier proof. Horn and Johnson is cited only generally.
 
 ## Reviewer computations reconciled
@@ -62,5 +62,5 @@ A proof audit, an adversarial audit and an editor's re-review of the revised ver
 | Testbed details | Table 1 states each method's range. The omitted estimated-basis setting (N_p = 200, δ = 10⁻⁴) is reported. The 1.136 vs 1.137 difference is explained. Remark 6.5 is corrected. |
 | Figure 1 label 7.64% vs 7.73% | The caption explains both. |
 | Remark 7.7 claim that the optimal factor tends to one | Removed. |
-| Mostajeran–Sepulchre lemma number | The published version could not be opened, so the number is dropped. The inequality is credited to Bourin and Fujii, as those authors do; Fujii (2005) is added from its Crossref record. |
+| Mostajeran–Sepulchre lemma number | The number is not cited. The inequality is credited to Bourin and Fujii, as those authors do; Fujii (2005) is added from its Crossref record. |
 | Abstract hard for general readers | A plain-language first paragraph was added, and the matrix criterion is now described in words. |
